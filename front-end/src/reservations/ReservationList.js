@@ -48,12 +48,12 @@ function ReservationList({ reservations }) {
             <td>
               {status === "booked" ? (
                 <div>
-                  <a href={`/reservations/${reservation_id}/seat`}>
+                  <link href={`/reservations/${reservation_id}/seat`}>
                     <button className="btn btn-primary btn-md">Seat</button>
-                  </a>
-                  <a href={`/reservations/${reservation_id}/edit`}>
+                  </link>
+                  <link href={`/reservations/${reservation_id}/edit`}>
                     <button className="btn btn-success btn-md">Edit</button>
-                  </a>
+                  </link>
                   <button
                     className="btn btn-danger btn-md"
                     data-reservation-id-cancel={reservation_id}
