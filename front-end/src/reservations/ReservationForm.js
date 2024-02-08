@@ -34,8 +34,7 @@ function ReservationForm({reservation, changeHandler, submitHandler, cancelHandl
             <input
               name="mobile_number"
               id="mobile_number"
-              type="tel" 
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              type="number" 
               required={true}
               value={reservation.mobile_number}
               maxLength="100"
