@@ -22,19 +22,12 @@ function ReservationNew() {
   const [createResError, setResError] = useState(null);
 
   const changeHandler = (e) => {
-    if (e.target.name === "mobile_number") {
-      if(!isNaN(e.target.value)){
-      setReservation({
-        ...reservation,
-        [e.target.name]: e.target.value,
-      })}
-    } else {
-      setReservation({
-        ...reservation,
-        [e.target.name]: e.target.value,
-      });
-    }
-  };
+    e.preventDefault();
+    setReservation({
+    ...reservation,
+    [e.target.name]: Number(e.target.value),
+    });
+    };
 
   const changePeopleHandler = (e) => {
     e.preventDefault();
